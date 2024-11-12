@@ -9,12 +9,42 @@ body {
   margin-top: 100px;
 }
 
-h1 {
-  color: white;
-  font: bold 48px "Audiowide";
-}
-
 h2 {
   color: white;
-  font: bold 48px "Rubik";
+  font: "Audiowide";
+}
+
+h1 {
+  color: white;
+  font: "Rubik";
+}
+
+.loading-container {
+  text-align: center;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  align-items: center;
+  margin-top: 290px;
+}
+
+.name {
+  font-size: 24px;
+  margin-bottom: 20px;
+  font: 30px "Audiowide";
+}
+
+.loading-bar {
+  width: 1000px;
+  height: 5px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.progress {
+  width: 0;
+  height: 100%;
+  background-color: #ff5900;
+  border-radius: 5px;
 }
