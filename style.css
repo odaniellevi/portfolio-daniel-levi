@@ -6,25 +6,20 @@ body {
   font-size: 48px;
   background-color: #000011;
   text-align: center;
-  margin-top: 100px;
-}
-
-h2 {
-  color: white;
-  font: "Audiowide";
-}
-
-h1 {
-  color: white;
-  font: "Rubik";
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
 }
 
 .loading-container {
-  text-align: center;
   color: #ffffff;
-  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  margin-top: 290px;
+  justify-content: center;
 }
 
 .name {
@@ -34,12 +29,11 @@ h1 {
 }
 
 .loading-bar {
-  width: 1000px;
+  width: 300px;
   height: 5px;
   background-color: #ffffff;
   border-radius: 5px;
   overflow: hidden;
-  margin: 0 auto;
 }
 
 .progress {
@@ -47,4 +41,11 @@ h1 {
   height: 100%;
   background-color: #ff5900;
   border-radius: 5px;
+}
+
+.main-content {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  text-align: center;
+  color: #ffffff;
 }
