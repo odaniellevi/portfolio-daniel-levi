@@ -5,9 +5,15 @@ const mainContent = document.getElementById("main-content");
 
 function updateProgress() {
   if (progress < 100) {
+<<<<<<< HEAD
     progress += 3;
     progressBar.style.width = progress + "%";
     setTimeout(updateProgress, 50);
+=======
+    progress += 3; // Aumentar o tempo de carregamento
+    progressBar.style.width = progress + "%";
+    setTimeout(updateProgress, 50); // Ajustar o intervalo de tempo
+>>>>>>> 4fed1ab09ec7254931135de6f7ba604b0e6766bf
   } else {
     loadingContainer.style.transition = "opacity 1s ease";
     loadingContainer.style.opacity = "0";
@@ -15,7 +21,7 @@ function updateProgress() {
       loadingContainer.style.display = "none";
       mainContent.style.display = "block";
       mainContent.style.opacity = "1";
-    }, 500);
+    }, 500); // Tempo deve corresponder à duração da transição
   }
 }
 

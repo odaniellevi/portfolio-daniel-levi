@@ -124,8 +124,13 @@ body {
 .navbar .nav-links li a img.theme-icon {
   width: 24px;
   height: 24px;
+<<<<<<< HEAD
   border: none;
   outline: none;
+=======
+  border: none; /* Remove qualquer borda */
+  outline: none; /* Remove qualquer outline */
+>>>>>>> 4fed1ab09ec7254931135de6f7ba604b0e6766bf
 }
 
 .main-content {
