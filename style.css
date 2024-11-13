@@ -123,7 +123,7 @@ body {
 .navbar img.theme-icon {
   width: 24px;
   height: 24px;
-  margin-top: -18px;
+  margin-top: 10px;
   margin-left: -120px;
   vertical-align: middle;
   border: none;
@@ -169,10 +169,20 @@ hr {
 
 .sobre-mim {
   font-family: monospace;
-  font-size: 20px;
+  font-size: 25px;
   text-align: left;
   margin-left: 82px;
-  font-weight: 300;
+  opacity: 0.8;
+  line-height: 1.5;
+}
+
+.img-daniel {
+  padding: 25px;
+  width: 380px;
+  height: 430px;
+  border-radius: 13%;
+  margin-top: -395px;
+  margin-left: 500px;
 }
 
 body.light-mode {
