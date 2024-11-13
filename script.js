@@ -5,9 +5,9 @@ const mainContent = document.getElementById("main-content");
 
 function updateProgress() {
   if (progress < 100) {
-    progress += 3;
+    progress += 3; // Aumentar o tempo de carregamento
     progressBar.style.width = progress + "%";
-    setTimeout(updateProgress, 50);
+    setTimeout(updateProgress, 50); // Ajustar o intervalo de tempo
   } else {
     loadingContainer.style.transition = "opacity 1s ease";
     loadingContainer.style.opacity = "0";
