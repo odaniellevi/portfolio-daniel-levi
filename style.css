@@ -178,6 +178,22 @@ html {
   text-align: center;
 }
 
+.container-habilidades {
+  width: 80%;
+  height: 35rem;
+  margin: 0 auto;
+  margin-top: 7rem;
+  text-align: center;
+}
+
+.container-projetos {
+  width: 80%;
+  height: 35rem;
+  margin: 0 auto;
+  margin-top: 7rem;
+  text-align: center;
+}
+
 .academico-dados {
   text-align: center;
   width: 506px;
@@ -213,6 +229,66 @@ html {
   color: white;
 }
 
+.html-texto {
+  font-family: "Audiowide";
+  color: white;
+  font-size: 24px;
+  margin-left: -60rem;
+  margin-top: 3rem;
+}
+
+.css-texto {
+  font-family: "Audiowide";
+  color: white;
+  font-size: 24px;
+  margin-left: -20rem;
+  margin-top: -12.7rem;
+}
+
+.js-texto {
+  font-family: "Audiowide";
+  color: white;
+  font-size: 24px;
+  margin-left: 20rem;
+  margin-top: -12.7rem;
+}
+
+.py-texto {
+  font-family: "Audiowide";
+  color: white;
+  font-size: 24px;
+  margin-left: 60rem;
+  margin-top: -12.7rem;
+}
+
+.html-icon {
+  width: 150px;
+  height: 150px;
+  margin-left: -60rem;
+  margin-top: 1rem;
+}
+
+.css-icon {
+  width: 150px;
+  height: 150px;
+  margin-left: -20rem;
+  margin-top: 1rem;
+}
+
+.js-icon {
+  width: 150px;
+  height: 150px;
+  margin-left: 20rem;
+  margin-top: 1rem;
+}
+
+.py-icon {
+  width: 150px;
+  height: 150px;
+  margin-left: 60rem;
+  margin-top: 1rem;
+}
+
 .sobre-mim-title {
   font-family: "Rubik";
   color: white;
@@ -226,6 +302,18 @@ html {
   color: white;
   text-align: center;
   margin-top: -7rem;
+}
+
+.habilidades-title {
+  font-family: "Rubik";
+  color: white;
+  text-align: center;
+}
+
+.projetos-title {
+  font-family: "Rubik";
+  color: white;
+  text-align: center;
 }
 
 hr {
@@ -258,6 +346,14 @@ hr {
   margin-top: -400px;
   margin-left: 40rem;
   align-self: center;
+}
+
+.projeto-1 {
+  width: 342px;
+  height: 185px;
+  background-color: #ff5900;
+  opacity: 0.8;
+  border-radius: 10px;
 }
 
 body.light-mode {
