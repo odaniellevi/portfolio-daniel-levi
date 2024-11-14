@@ -8,7 +8,7 @@
 }
 
 body {
-  font-family: "Audiowide", "Rubik", monospace;
+  font-family: "Rubik", "Audiowide", monospace;
   font-size: 25px;
   background-color: #000011;
   text-align: center;
@@ -17,7 +17,10 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh;
-  overflow: hidden;
+}
+
+html {
+  scroll-padding-top: 11.688rem;
 }
 
 .loading-container {
@@ -56,6 +59,16 @@ body {
   transition: width 0.5s ease;
 }
 
+.navbar-container {
+  width: 100%;
+  height: 7.5rem;
+  background-color: #000011;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+
 .navbar {
   width: 100%;
   height: 120px;
@@ -69,6 +82,7 @@ body {
 }
 
 .navbar .logo {
+  font-family: "Audiowide";
   float: left;
   display: block;
   margin-left: 48px;
@@ -98,6 +112,7 @@ body {
 }
 
 .navbar .nav-links li a {
+  font-family: "Audiowide";
   display: block;
   color: #fff;
   text-align: center;
@@ -134,25 +149,54 @@ body {
 
 .main-content {
   padding-top: 140px;
-  display: none;
-  margin-top: -160px;
+  display: flex;
+  margin-top: -130px;
   width: 100%;
-  height: calc(100vh - 140px);
+  height: 100%;
   background-color: #000011;
   color: #ffffff;
-  text-align: center;
-  display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   opacity: 0;
 }
 
-h2 {
+.container-sobre {
+  width: 80%;
+  height: 30rem;
+  margin: 0 auto;
+  margin-top: 7rem;
+  text-align: left;
+}
+
+.container-academico {
+  width: 80%;
+  height: 30rem;
+  margin: 0 auto;
+  margin-top: 7rem;
+  text-align: center;
+}
+
+.sobre-mim-title {
   font-family: "Rubik";
   color: white;
   text-align: left;
-  margin-left: 80px;
+  margin-left: -60px;
   margin-top: 40px;
+}
+
+.academico-title {
+  font-family: "Rubik";
+  color: white;
+  text-align: center;
+  margin-top: -6rem;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #ff5900;
+  width: 31rem;
+  margin-left: -60px;
 }
 
 .small-space {
@@ -160,29 +204,24 @@ h2 {
   height: 10px;
 }
 
-hr {
-  border: none;
-  border-top: 1px solid #ff5900;
-  width: 40%;
-  margin-left: 78px;
-}
-
 .sobre-mim {
   font-family: monospace;
   font-size: 25px;
   text-align: left;
-  margin-left: 82px;
+  margin-left: -62px;
   opacity: 0.8;
   line-height: 1.5;
 }
 
 .img-daniel {
-  padding: 25px;
-  width: 380px;
-  height: 430px;
+  padding: 2rem;
+  width: 100%;
+  max-width: 380px;
+  height: auto;
   border-radius: 13%;
-  margin-top: -395px;
-  margin-left: 500px;
+  margin-top: -400px;
+  margin-left: 40rem;
+  align-self: center;
 }
 
 body.light-mode {
@@ -209,4 +248,20 @@ body.light-mode .navbar .nav-links li a {
 
 body.light-mode .navbar .nav-links li.selected a {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+}
+
+@media (max-width: 768px) {
+  .navbar .nav-links {
+    flex-direction: column;
+    margin-left: 0;
+    align-items: center;
+  }
+
+  .img-daniel {
+    margin: 0 auto;
+  }
+
+  .container-sobre {
+    width: 90%;
+  }
 }
