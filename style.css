@@ -265,44 +265,44 @@ html {
   margin-top: -12.7rem;
 }
 
-.linkedin-texto {
-  font-family: "Audiowide";
-  color: white;
-  font-size: 24px;
-  margin-left: -55rem;
-  margin-top: 3.5rem;
-}
-
-.github-texto {
-  font-family: "Audiowide";
-  color: white;
-  font-size: 24px;
-  margin-left: -20rem;
-  margin-top: -9.5rem;
-}
-
-.instagram-texto {
-  font-family: "Audiowide";
-  color: white;
-  font-size: 24px;
-  margin-left: 15rem;
-  margin-top: -9.8rem;
-}
-
-.email-texto {
-  font-family: "Audiowide";
-  color: white;
-  font-size: 24px;
-  margin-left: 50rem;
-  margin-top: -9.8rem;
-}
-
 .py-texto {
   font-family: "Audiowide";
   color: white;
   font-size: 24px;
   margin-left: 60rem;
   margin-top: -12.7rem;
+}
+
+.linkedin-texto {
+  font-family: "Audiowide";
+  color: white;
+  font-size: 24px;
+  margin-left: -60rem;
+  margin-top: 3rem;
+}
+
+.email-texto {
+  font-family: "Audiowide";
+  color: white;
+  font-size: 24px;
+  margin-left: -20rem;
+  margin-top: -9rem;
+}
+
+.instagram-texto {
+  font-family: "Audiowide";
+  color: white;
+  font-size: 24px;
+  margin-left: 20rem;
+  margin-top: -8.5rem;
+}
+
+.github-texto {
+  font-family: "Audiowide";
+  color: white;
+  font-size: 24px;
+  margin-left: 60rem;
+  margin-top: -8.5rem;
 }
 
 .html-icon {
@@ -334,31 +334,31 @@ html {
 }
 
 .linkedin-icon {
-  width: 100px;
-  height: 100px;
-  margin-left: -55rem;
-  margin-top: 4rem;
-}
-
-.instagram-icon {
-  width: 100px;
-  height: 100px;
-  margin-left: 15rem;
-  margin-top: 1.1rem;
-}
-
-.github-icon {
-  width: 100px;
-  height: 100px;
-  margin-left: -20rem;
-  margin-top: 1.2rem;
+  width: 90px;
+  height: 90px;
+  margin-top: 1rem;
+  margin-left: -60rem;
 }
 
 .email-icon {
   width: 110px;
-  height: 84px;
-  margin-left: 50rem;
-  margin-top: 1.5rem;
+  height: 80px;
+  margin-top: 1rem;
+  margin-left: -20rem;
+}
+
+.instagram-icon {
+  width: 90px;
+  height: 90px;
+  margin-top: 1rem;
+  margin-left: 20rem;
+}
+
+.github-icon {
+  width: 90px;
+  height: 90px;
+  margin-top: 1rem;
+  margin-left: 60rem;
 }
 
 .sobre-mim-title {
@@ -393,6 +393,15 @@ html {
   font-family: "Rubik";
   color: white;
   text-align: center;
+}
+
+.contato-subtitle {
+  font-family: monospace;
+  font-size: 22px;
+  line-height: 1.5;
+  color: white;
+  text-align: center;
+  margin-top: 1rem;
 }
 
 hr {
