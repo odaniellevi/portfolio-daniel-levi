@@ -5,9 +5,9 @@ const mainContent = document.getElementById("main-content");
 
 function updateProgress() {
   if (progress < 100) {
-    progress += 3;
+    progress += 3; // Aumentar o tempo de carregamento
     progressBar.style.width = progress + "%";
-    setTimeout(updateProgress, 50);
+    setTimeout(updateProgress, 50); // Ajustar o intervalo de tempo
   } else {
     loadingContainer.style.transition = "opacity 1s ease";
     loadingContainer.style.opacity = "0";
@@ -15,7 +15,7 @@ function updateProgress() {
       loadingContainer.style.display = "none";
       mainContent.style.display = "block";
       mainContent.style.opacity = "1";
-    }, 500);
+    }, 500); // Tempo deve corresponder à duração da transição
   }
 }
 
@@ -37,4 +37,16 @@ document.addEventListener("DOMContentLoaded", function () {
   toggleThemeButton.addEventListener("click", function () {
     document.body.classList.toggle("light-mode");
   });
+
+  document
+    .querySelector('a[href="#contato"]')
+    .addEventListener("click", function (e) {
+      e.preventDefault();
+      let targetSection = document.querySelector("#contato");
+
+      window.scrollTo({
+        top: targetSection.getBoundingClientRect().top + window.scrollY - -500, // Ajuste o valor conforme necessário
+        behavior: "smooth",
+      });
+    });
 });

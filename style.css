@@ -188,10 +188,22 @@ html {
 
 .container-projetos {
   width: 80%;
-  height: 35rem;
+  height: 34.5rem;
   margin: 0 auto;
   margin-top: 7rem;
   text-align: center;
+}
+
+.container-contato {
+  width: 80%;
+  height: 25rem;
+  margin: 0 auto;
+  margin-top: 3rem;
+  text-align: center;
+}
+
+#contato {
+  scroll-margin-top: -10rem;
 }
 
 .academico-dados {
@@ -253,6 +265,38 @@ html {
   margin-top: -12.7rem;
 }
 
+.linkedin-texto {
+  font-family: "Audiowide";
+  color: white;
+  font-size: 24px;
+  margin-left: -55rem;
+  margin-top: 3.5rem;
+}
+
+.github-texto {
+  font-family: "Audiowide";
+  color: white;
+  font-size: 24px;
+  margin-left: -20rem;
+  margin-top: -9.5rem;
+}
+
+.instagram-texto {
+  font-family: "Audiowide";
+  color: white;
+  font-size: 24px;
+  margin-left: 15rem;
+  margin-top: -9.8rem;
+}
+
+.email-texto {
+  font-family: "Audiowide";
+  color: white;
+  font-size: 24px;
+  margin-left: 50rem;
+  margin-top: -9.8rem;
+}
+
 .py-texto {
   font-family: "Audiowide";
   color: white;
@@ -289,6 +333,34 @@ html {
   margin-top: 1rem;
 }
 
+.linkedin-icon {
+  width: 100px;
+  height: 100px;
+  margin-left: -55rem;
+  margin-top: 4rem;
+}
+
+.instagram-icon {
+  width: 100px;
+  height: 100px;
+  margin-left: 15rem;
+  margin-top: 1.1rem;
+}
+
+.github-icon {
+  width: 100px;
+  height: 100px;
+  margin-left: -20rem;
+  margin-top: 1.2rem;
+}
+
+.email-icon {
+  width: 110px;
+  height: 84px;
+  margin-left: 50rem;
+  margin-top: 1.5rem;
+}
+
 .sobre-mim-title {
   font-family: "Rubik";
   color: white;
@@ -311,6 +383,13 @@ html {
 }
 
 .projetos-title {
+  font-family: "Rubik";
+  color: white;
+  text-align: center;
+}
+
+.contato-title {
+  margin-top: -5rem;
   font-family: "Rubik";
   color: white;
   text-align: center;
