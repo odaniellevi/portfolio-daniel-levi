@@ -24,6 +24,17 @@ html {
   scroll-padding-top: 11.688rem;
 }
 
+.fade-in {
+  opacity: 0;
+  transform: translate(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .loading-container {
   color: #ffffff;
   display: flex;
@@ -165,7 +176,7 @@ html {
 .container-sobre {
   width: 80%;
   height: 30rem;
-  margin: 0 auto;
+  margin: 15rem;
   margin-top: 7rem;
   text-align: left;
 }
@@ -192,6 +203,16 @@ html {
   margin: 0 auto;
   margin-top: 7rem;
   text-align: center;
+}
+
+.container-projetos a img {
+  transition: transform 0.3s ease;
+  box-shadow: 0.3s ease;
+}
+
+.container-projetos a img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(255, 89, 0, 0.5);
 }
 
 .container-contato {
