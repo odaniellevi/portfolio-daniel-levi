@@ -549,19 +549,3 @@ body.light-mode .navbar .nav-links li a {
 body.light-mode .navbar .nav-links li.selected a {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
 }
-
-@media (max-width: 768px) {
-  .navbar .nav-links {
-    flex-direction: column;
-    margin-left: 0;
-    align-items: center;
-  }
-
-  .img-daniel {
-    margin: 0 auto;
-  }
-
-  .container-sobre {
-    width: 90%;
-  }
-}
