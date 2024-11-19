@@ -109,7 +109,6 @@ html {
   text-underline-offset: 8px;
   font-size: 25px;
   transition: color 0.5s ease;
-  text-decoration-color: 0.5s ease;
 }
 
 .navbar .nav-links {
@@ -565,22 +564,22 @@ body.light-mode .navbar .nav-links li.selected a {
 
 .social-icon {
   filter: invert(0);
-  transition: filter 0.5s ease, transform 0.3s ease;
+  transition: filter 0.5s ease;
 }
 
 .social-icon:hover {
   filter: invert(0);
-  transform: scale(1.1);
-  transition: filter 0.5s ease, transform 0.3s ease;
+  transition: filter 0.5s ease;
 }
 
 body.light-mode .social-icon {
   filter: invert(0);
+  transition: filter 0.5s ease;
 }
 
 body.light-mode .social-icon:hover {
   filter: invert(100%);
-  transform: scale(1.1), transform 0.3s ease;
+  transition: filter 0.5s ease;
 }
 
 body.light-mode .linkedin-icon,
