@@ -17,6 +17,7 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh;
+  transition: background-color 0.5s ease;
 }
 
 html {
@@ -91,6 +92,7 @@ html {
   left: 0;
   z-index: 999;
   border-bottom: 2px solid #ff5900;
+  transition: background-color 0.5s ease, border-bottom 0.5s ease;
 }
 
 .navbar .logo {
@@ -106,6 +108,8 @@ html {
   text-decoration-color: #ff5900;
   text-underline-offset: 8px;
   font-size: 25px;
+  transition: color 0.5s ease;
+  text-decoration-color: 0.5s ease;
 }
 
 .navbar .nav-links {
@@ -120,7 +124,7 @@ html {
   border: 2px solid #ff5900;
   border-radius: 7px;
   margin-right: 50px;
-  transition: transform 0.3s ease, border 0.3s ease;
+  transition: border 0.5s ease;
 }
 
 .navbar .nav-links li a {
@@ -132,7 +136,7 @@ html {
   text-decoration: none;
   font-size: 18px;
   opacity: 0.8;
-  transition: opacity 0.3s ease;
+  transition: color 0.5s ease;
 }
 
 .navbar .nav-links li:hover {
@@ -145,6 +149,7 @@ html {
 .navbar .nav-links li.selected a {
   opacity: 1;
   box-shadow: 0 0 20px #ff5900;
+  transition: box-shadow 0.5s ease;
 }
 
 .navbar img.theme-icon {
@@ -517,7 +522,7 @@ hr {
 }
 
 body.light-mode {
-  background-color: #ffffff;
+  background-color: #e8e8e8;
   color: #000000;
   transition: background-color 0.5s ease, color 0.5s ease;
 }
@@ -533,7 +538,7 @@ body.light-mode h2 {
 }
 
 body.light-mode .navbar {
-  background-color: #ffffff;
+  background-color: #e8e8e8;
   border-bottom: 2px solid #ff5900;
   transition: background-color 0.5s ease, border-bottom 0.5s ease;
 }
@@ -560,10 +565,13 @@ body.light-mode .navbar .nav-links li.selected a {
 
 .social-icon {
   filter: invert(0);
+  transition: filter 0.5s ease, transform 0.3s ease;
 }
 
 .social-icon:hover {
   filter: invert(0);
+  transform: scale(1.1);
+  transition: filter 0.5s ease, transform 0.3s ease;
 }
 
 body.light-mode .social-icon {
@@ -572,11 +580,12 @@ body.light-mode .social-icon {
 
 body.light-mode .social-icon:hover {
   filter: invert(100%);
+  transform: scale(1.1), transform 0.3s ease;
 }
 
 body.light-mode .linkedin-icon,
 body.light-mode .email-icon,
 body.light-mode .instagram-icon,
 body.light-mode .whatsapp-icon {
-  filter: invert(0);
+  filter: invert(100%);
 }
