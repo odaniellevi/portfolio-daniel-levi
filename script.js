@@ -5,9 +5,9 @@ const mainContent = document.getElementById("main-content");
 
 function updateProgress() {
   if (progress < 100) {
-    progress += 3; // Aumentar o tempo de carregamento
+    progress += 3;
     progressBar.style.width = progress + "%";
-    setTimeout(updateProgress, 50); // Ajustar o intervalo de tempo
+    setTimeout(updateProgress, 50);
   } else {
     loadingContainer.style.transition = "opacity 1s ease";
     loadingContainer.style.opacity = "0";
@@ -15,7 +15,7 @@ function updateProgress() {
       loadingContainer.style.display = "none";
       mainContent.style.display = "block";
       mainContent.style.opacity = "1";
-    }, 500); // Tempo deve corresponder à duração da transição
+    }, 500);
   }
 }
 
@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", function () {
       let targetSection = document.querySelector("#contato");
 
       window.scrollTo({
-        top: targetSection.getBoundingClientRect().top + window.scrollY - -500,
+        top: targetSection.getBoundingClientRect().top + window.scrollY - 100,
         behavior: "smooth",
       });
     });
@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     },
     {
-      threshold: 0.2,
+      threshold: 0.1,
     }
   );
 
