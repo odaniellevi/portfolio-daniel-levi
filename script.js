@@ -69,29 +69,4 @@ document.addEventListener("DOMContentLoaded", function () {
   fadeIns.forEach((fadeIn) => {
     observer.observe(fadeIn);
   });
-
-  const sections = document.querySelectorAll("section");
-  const navItems = document.querySelectorAll(".nav-links li");
-
-  const sectionObserver = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          navItems.forEach((item) => {
-            item.classList.remove("selected");
-            if (item.querySelector(`a[href="#${entry.target.id}"]`)) {
-              item.classList.add("selected");
-            }
-          });
-        }
-      });
-    },
-    {
-      threshold: 0.5,
-    }
-  );
-
-  sections.forEach((section) => {
-    sectionObserver.observe(section);
-  });
 });
